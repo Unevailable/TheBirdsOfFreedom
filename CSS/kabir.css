@@ -3,128 +3,119 @@
 @import url('https://fonts.googleapis.com/css2family=Black+Ops+One&display=swap');
 
 /********************* // story // ********************/
-
-.story{
-	position: absolute;	
-	top: 0;
-	left: 0;
-
-	/* font setting */
-   font-family: 'Black Ops One', cursive;
-   font-size: 2rem;
+.story {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* font setting */
+    font-family: 'Black Ops One', cursive;
+    font-size: 2rem;
 }
 
 /*** // header // ***/
-.title{
-	text-align: center;
-
-	position: relative;
-	top: 0vh;
-	width: 100%;
-	margin-top: -10vh;
+.title {
+    text-align: center;
+    position: relative;
+    top: 0vh;
+    width: 100%;
+    margin-top: -10vh;
 }
 
-h1{
-   font-family: 'Black Ops One', cursive;
-   font-size: 3rem;
-	color: black;
-	text-shadow: 1vw 1vh 5px aliceblue;
-
-	padding: 45vh 0vw 47vh 0vw;
-	
-	/* background settings and position */		
-	background-image: url("../photos/kids.jpg");
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: 100%;
+h1 {
+    font-family: 'Black Ops One', cursive;
+    font-size: 3rem;
+    color: black;
+    text-shadow: 1vw 1vh 5px aliceblue;
+    padding: 45vh 0vw 47vh 0vw;
+    /* background settings and position */
+    background-image: url("../photos/kids.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 /*** // box one // ***/
-.p_one{
-	/* background settings and position */	
-	background-image: url("../photos/Kabir.jpg");
-	background-color: #8992CE;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position: 125vh;
-	background-size: 25%;
-
-	margin-top: -7vh;
+.p_one {
+    /* background settings and position */
+    background-image: url("../photos/Kabir.jpg");
+    background-color: #8992CE;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 125vh;
+    background-size: 25%;
+    margin-top: -7vh;
 }
 
-.txt_one{
-	color: aliceblue;
-	width: 45%;
-	padding: 7vh 2vw 7vh 2vw;
+.txt_one {
+    color: aliceblue;
+    width: 45%;
+    padding: 7vh 2vw 7vh 2vw;
 }
 
 /*** // box two // ***/
-.p_two{
-	/* background settings and position */		
-	background-image: url("../photos/army2.jpg");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: 10vh;
-	background-size: 35%;
-
-	margin-top: -7vh
+.p_two {
+    /* background settings and position */
+    background-image: url("../photos/army2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 10vh;
+    background-size: 35%;
+    margin-top: -7vh
 }
 
-.txt_two{
-  color: #212121;
-	padding: 7vh 2vw 7vh 2vw;
-	width: 45%;
-	position: relative;
-	left: 50%;
+.txt_two {
+    color: #212121;
+    padding: 7vh 2vw 7vh 2vw;
+    width: 45%;
+    position: relative;
+    left: 50%;
 }
 
 /* // box three // ***/
-.p_three{
-	/* background settings and position */		
-	background-color: #313A76;
-	background-image: url("../photos/army1.jpg");
-	background-position: 125vh;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: 25%;
-
-	margin-top: -8vh
+.p_three {
+    /* background settings and position */
+    background-color: #313A76;
+    background-image: url("../photos/army1.jpg");
+    background-position: 125vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 25%;
+    margin-top: -8vh
 }
 
-.txt_three{
-  color: aliceblue;
-	padding: 7vh 2vw 7vh 2vw;
-	width: 45%;
-	position: left;
-  left: 50%;
+.txt_three {
+    color: aliceblue;
+    padding: 7vh 2vw 7vh 2vw;
+    width: 45%;
+    position: left;
+    left: 50%;
 }
 
 /*** // box five // ***/
-.p_five{
-	/* background settings and position */
-  background-color: white;
-	background-image: url("../photos/army.jpg");
-	background-repeat: no-repeat;
-	background-position: 125vh;
-	background-attachment: fixed;
-	background-size: 25%;
-
-	z-index: 3;
-	margin-top: -8vh;
-	padding-bottom: 1vh;
+.p_five {
+    /* background settings and position */
+    background-color: white;
+    background-image: url("../photos/army.jpg");
+    background-repeat: no-repeat;
+    background-position: 125vh;
+    background-attachment: fixed;
+    background-size: 25%;
+    z-index: 3;
+    margin-top: -8vh;
+    padding-bottom: 1vh;
 }
 
-.txt_five{
-  color: #212121;
-	z-index: 4;
-	padding: 7vh 2vw 7vh 2vw;
-	width: 45%;
+.txt_five {
+    color: #212121;
+    z-index: 4;
+    padding: 7vh 2vw 7vh 2vw;
+    width: 45%;
 }
 
-.txt_four{
-  color: aliceblue;
-	z-index: 4;
-	padding: 7vh 2vw 7vh 2vw;
-	width: 45%;
+.txt_four {
+    color: aliceblue;
+    z-index: 4;
+    padding: 7vh 2vw 7vh 2vw;
+    width: 45%;
 }
