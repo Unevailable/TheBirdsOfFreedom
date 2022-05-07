@@ -1,74 +1,83 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
+/** I want to credit David one of the Winners from 2019 for the source of this code**/
+/* imports */
+@import url('https://fonts.googleapis.com/css2family=Black+Ops+One&display=swap');
 
-/**This is just for looks**/
-body {
-    overflow: hidden;
-    background-color: #006747;
+/********************* // story // ********************/
+
+.story{
+	position: absolute;	
+	top: 0;
+	left: 0;
+
+	/* font setting */
+   font-family: 'Black Ops One', cursive;
+   font-size: 2rem;
 }
 
-/**The div controls the designs, like the container style and some colors**/
-div {
-    font-family: Quicksand;
-    font-size: 2.5vh;
-  font-weight: bold;
-  	color: #DA291C; 
-    text-shadow: 0px 2px 0px rgb(0, 0, 0);
+/*** // header // ***/
+.title{
+	text-align: center;
 
+	position: relative;
+	top: 0vh;
+	width: 100%;
+	margin-top: -10vh;
 }
 
-/*This is for making sure the images are full size*/
-img {
-    top: 0vh;
-    width: 100%;
-    height: 100%;
+h1{
+   font-family: 'Black Ops One', cursive;
+   font-size: 3rem;
+	color: black;
+	text-shadow: 0vw 0vh 5px aliceblue;
+
+	padding: 45vh 0vw 47vh 0vw;
+	
+	/* background settings and position */		
+	background-image: url("../photos/city3.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 
-/*This controls the size of the containers*/
-.container {
-    position: absolute;
-    width: 33vw;
-    height: 100vh;
+/*** // box one // ***/
+.p_one{
+	/* background settings and position */	
+	background-image: url("../photos/cityjawn.jpg");
+	background-color: #6d3636;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 100vh;
+	background-size: 40%;
+
+	margin-top: -7vh;
 }
 
-/*This contains the second photo containers*/
-.overlay {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: 1s ease;
+.txt_one{
+	color: aliceblue;
+	width: 45%;
+	padding: 7vh 2vw 7vh 2vw;
 }
 
-/*This allows for the picture to change when hovering*/
-.container:hover .overlay {
-    opacity: 1;
+/*** // box two // ***/
+.p_two{
+	/* background settings and position */		
+	background-image: url("../photos/Dhaka.jpg");
+  background-color: #a94c4c;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 10vh;
+	background-size: 40%;
+
+	margin-top: -7vh
 }
 
-/**This contains our information**/
-.overlay_text {
-    position: absolute;
-    top: 2vw;
-    opacity: 0;
-  
+.txt_two{
+  color: aliceblue;
+	padding: 7vh 2vw 7vh 2vw;
+	width: 45%;
+	position: relative;
+	left: 50%;
 }
 
-/*This allows the text to appear*/
-.overlay_text {
-    opacity: 1;
-    text-align: center;
-}
-
-
-/*These just decide the position of our containers*/
-.al {
-    left: 0vw;
-}
-
-.dillon {
-    left: 33vw;
-}
-
-.rufayda {
-    left: 66vw;
-}
+/* // box three // ***/
