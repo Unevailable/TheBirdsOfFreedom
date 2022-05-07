@@ -31,7 +31,7 @@ body {
   background-image: url('https://images.thequint.com/thequint%2F2020-03%2F8280d7fc-f239-4ef2-906d-1e8b27798c3f%2Fban.jpg?rect=0%2C0%2C2000%2C1125');
 }
 .background--summer {
-  background-image: url('https://images.indianexpress.com/2021/12/Bangladesh-50-1.jpg');
+  background-image: url('../photos/birds3.jpg');
 }
 .background--fall {
   background-image: url('https://images.pexels.com/photos/33060/road-forest-season-autumn.jpg?cs=srgb&dl=autumn-fall-forest-33060.jpg&fm=jpg');
@@ -58,3 +58,23 @@ body {
   height: 100vh;
   display: flex;
 }
+
+.season-desc1 {
+  background-image: url('../photos/raghu.jpg');
+  height: 100vh;
+  display: flex;
+}
+
+.season-desc2 {
+  background-image: url('../photos/lib3.jpg');
+  height: 100vh;
+  display: flex;
+}
+
+.season-desc3 {
+  background-image: url('../photos/lib.jpg');
+  height: 100vh;
+  display: flex;
+}
+
+
