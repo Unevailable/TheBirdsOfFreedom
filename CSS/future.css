@@ -1,0 +1,83 @@
+/** I want to credit David one of the Winners from 2019 for the source of this code**/
+/* imports */
+@import url('https://fonts.googleapis.com/css2family=Black+Ops+One&display=swap');
+
+/********************* // story // ********************/
+
+.story{
+	position: absolute;	
+	top: 0;
+	left: 0;
+
+	/* font setting */
+   font-family: 'Black Ops One', cursive;
+   font-size: 2rem;
+}
+
+/*** // header // ***/
+.title{
+	text-align: center;
+
+	position: relative;
+	top: 0vh;
+	width: 100%;
+	margin-top: -10vh;
+}
+
+h1{
+   font-family: 'Black Ops One', cursive;
+   font-size: 3rem;
+	color: black;
+	text-shadow: 0vw 0vh 5px aliceblue;
+
+	padding: 45vh 0vw 47vh 0vw;
+	
+	/* background settings and position */		
+	background-image: url("../photos/city3.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+/*** // box one // ***/
+.p_one{
+	/* background settings and position */	
+	background-image: url("../photos/cityjawn.jpg");
+	background-color: #6d3636;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 100vh;
+	background-size: 40%;
+
+	margin-top: -7vh;
+}
+
+.txt_one{
+	color: aliceblue;
+	width: 45%;
+	padding: 7vh 2vw 7vh 2vw;
+}
+
+/*** // box two // ***/
+.p_two{
+	/* background settings and position */		
+	background-image: url("../photos/Dhaka.jpg");
+  background-color: #a94c4c;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 10vh;
+	background-size: 40%;
+
+	margin-top: -7vh
+}
+
+.txt_two{
+  color: aliceblue;
+	padding: 7vh 2vw 7vh 2vw;
+	width: 45%;
+	position: relative;
+	left: 50%;
+}
+
+/* // box three // ***/
