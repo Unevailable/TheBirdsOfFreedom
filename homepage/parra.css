@@ -40,7 +40,7 @@ body {
   background-image: url('https://bif5m4023k53ib5vt30v2wu8-wpengine.netdna-ssl.com/wp-content/uploads/2020/06/aerial-photography-of-city-2382896-scaled.jpg');
 }
 .background--Creator {
-  background-image: url('https://scontent.cdninstagram.com/v/t1.15752-9/279580989_1454294395028513_6241592780549297758_n.jpg?stp=dst-jpg_p720x720&_nc_cat=104&ccb=1-5&_nc_sid=5a057b&_nc_ohc=QkOf8eZoB-oAX-9jXn7&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.cdninstagram.com&oh=03_AVKmO8iplr4zUsV_sViSKXBs6HNDedIULT8UE_6TxFZ2UA&oe=62970B93');
+  background-image: url('../photos/creator.jpg');
 }
 .title {
   position: absolute;
