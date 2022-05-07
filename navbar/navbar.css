@@ -3,325 +3,324 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 
 a {
-   text-decoration: none;
-   color: white;
+    text-decoration: none;
+    color: white;
 }
 
 a:hover {
-   text-decoration: underline;
+    text-decoration: underline;
 }
 
 .header__burgerMenu__content__list__item__link,
 .horizontalNav__list__item__link {
-   display: block;
-   margin-left: 1.25rem;
-   padding: 1rem 0.6rem 1rem 4rem;
-   font-size: 1rem;
-   font-weight: 600;
-   color: #000000;
-   /**changes the color of the menu text**/
-   background-position: 0.6rem center;
-   background-repeat: no-repeat;
-   background-size: 1.5rem 1.5rem;
+    display: block;
+    margin-left: 1.25rem;
+    padding: 1rem 0.6rem 1rem 4rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000000;
+    /**changes the color of the menu text**/
+    background-position: 0.6rem center;
+    background-repeat: no-repeat;
+    background-size: 1.5rem 1.5rem;
 }
 
 .header__burgerMenu__content__list__item__link:hover,
 .horizontalNav__list__item__link:hover {
-   text-decoration: none;
+    text-decoration: none;
 }
 
 .header__burgerMenu__content__list__item--accueil,
 .header__burgerMenu__content__list__item--ml,
 .header__burgerMenu__content__list__item--bottom {
-   padding-top: 0.8125rem;
-   padding-bottom: 0.8125rem;
-   border-style: solid;
-   border-color: #d9d9d9;
-   border-width: 1px;
+    padding-top: 0.8125rem;
+    padding-bottom: 0.8125rem;
+    border-style: solid;
+    border-color: #d9d9d9;
+    border-width: 1px;
 }
 
 header {
-   position: fixed;
-   z-index: 30;
-   top: 0;
-   left: 0;
-   box-sizing: border-box;
-   display: block;
-   width: 100%;
+    position: fixed;
+    z-index: 30;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
 }
 
 .header {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 3rem;
-   background-color: #006747;
-   box-shadow: 0 0 4px #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    background-color: #006747;
+    box-shadow: 0 0 4px #000000;
 }
 
 /** these are the icons on the hamburger menu**/
 .headerLink--accueil {
-   /** home page icon **/
-   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAAAAAAAA+UO7fwAAAAlwSFlzAAAASAAAAEgARslrPgAAAQxJREFUaN7tlzEOAUEYRh8RjUSr1riAG+hcgUMoXUHrDlxB5wYuoFFvK9FswWpmEtlgd3b+9e/K/5LXyJJvMuQFGIZh/CsdYANsga72mFD6wB7InDv3WisYAIeX8d4jMNQeV8QIOL0Z7z25ZxrJGDh/Ge+9ABPtsXmmQFJivDdx72kEM+AaMN57A+ba45dAWmG8NwUWWuNXwD1ivPcBrH853AcqdnjenwQvHyhpaw3ep0BJW0vwigIlrWjwygZKWpHghQZK2qjgVQ2UtJWCFxsoaYOCJxUoad8GrxNwK1noNUZSalvr/urZAZpGr4bPLPruiv6WWn8DdgBt7ADa2AG0sQNoYwcwDMMwDE2eHFpoy4OoEaYAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTgtMDYtMjZUMTM6Mjc6MDcrMDA6MDCGmZpxAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE4LTA2LTI2VDEzOjI3OjA3KzAwOjAw98QizQAAACh0RVh0c3ZnOmJhc2UtdXJpAGZpbGU6Ly8vdG1wL21hZ2ljay10NW9XR0xHQ6crYYwAAAAASUVORK5CYII=');
+    /** home page icon **/
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAAAAAAAA+UO7fwAAAAlwSFlzAAAASAAAAEgARslrPgAAAQxJREFUaN7tlzEOAUEYRh8RjUSr1riAG+hcgUMoXUHrDlxB5wYuoFFvK9FswWpmEtlgd3b+9e/K/5LXyJJvMuQFGIZh/CsdYANsga72mFD6wB7InDv3WisYAIeX8d4jMNQeV8QIOL0Z7z25ZxrJGDh/Ge+9ABPtsXmmQFJivDdx72kEM+AaMN57A+ba45dAWmG8NwUWWuNXwD1ivPcBrH853AcqdnjenwQvHyhpaw3ep0BJW0vwigIlrWjwygZKWpHghQZK2qjgVQ2UtJWCFxsoaYOCJxUoad8GrxNwK1noNUZSalvr/urZAZpGr4bPLPruiv6WWn8DdgBt7ADa2AG0sQNoYwcwDMMwDE2eHFpoy4OoEaYAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTgtMDYtMjZUMTM6Mjc6MDcrMDA6MDCGmZpxAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE4LTA2LTI2VDEzOjI3OjA3KzAwOjAw98QizQAAACh0RVh0c3ZnOmJhc2UtdXJpAGZpbGU6Ly8vdG1wL21hZ2ljay10NW9XR0xHQ6crYYwAAAAASUVORK5CYII=');
 }
 
 .headerLink--sejours {
-   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAAAAAAAA+UO7fwAAAAlwSFlzAAAASAAAAEgARslrPgAAAyRJREFUaN7tmb9rFEEUxz+JhvjjQDBGkUtOUERbPQ2KKMZKwVYi2tuIFoIoEvBsTFoxcgn+A2qjYBKtrKwkZyFaxMKYH0owUYz44y4BtZg93LzM3s3OzF4U7wtT7O68977f3Zk3b2ahjjr+bzR48rMC6AA6gSywE9gMpILnX4H3wChQAJ4Az4Cfy/0C2oFeYAr4FbNNAj1A23IQbwUGgJIFcdlKQB7YUCvyp4CPHojLNgucTJJ4E3A7AeKy9QexvGINMOyZ6DnUPNA9Gwpienvzvsl/Dnw3A93AvKbPoK8vkcSwuSti7AbGNP3yruRPJ0B+Fn3qTAOvNP27bMm34jfbzAVvvlLe3wiMC7sZoMVGwIAjYVtkgR/C1624TtpwX6Rc0C18lYBMHAe9juRdBawC3gh/PabGjUTn51oJADgr/E2hisaq2O+B/IQHAetQVWzYb4fubUt0OgaeBM54EDAHPBL3jpgIyIrr51UCNYiWAR57EADwtAo3LV6y+LMdAHIkN9YrYZ+I9cLESC5em4L7USKSREbEmjExkvm/OfTsUo0FrBaxijYCUuJ5DrcMNQkcMxSQshEgh9A2TR9XEaZpdjsWQ0g3iXVwFWGCg8JmySTWpdFRcb2rgoBrhkRsIWNLbloBBXF9tEKAHHA5QQHHxfWIiZHMvd+ovj/N4X8IpVCTNmyz10RAI2qShQ3PG9j5FnBB9B9HP2K06BHG71Albq0ErAWmRf/rpuRBv6G5UsXmi4WIcmq8w+J0fVX0KaL2zLGQF07mUaV2FO5bCii3aWArcAhYEM9uxiUP6qxyVjh6y5/aSGIH8MlRxDBquIbvfQDW2wgAdVYpg7wGtkT0bwfuoWp5101RuZ2wJV9Gv8bpBOowqhJ8kO9zJQ9qH6ob3wvADaLXCFfyg8BKHwIISA5FBBoDLrJ0nLqQf4jHw90ymliamcLtO/AAVVocdiDf5/PN69CFyt2+Jmk42zhPWFO0oI77ZK1i04qoPG+dKl2QRpUdsnYyaROo8iD2ChuGr9+sjcAe1LlNFrWopVn8m3UKtYaMoH6zFvgLfrPWUce/jt9yMQRTP6J79wAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOC0wNi0yNlQxMzo0NDo1OCswMDowMDuzlbwAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTgtMDYtMjZUMTM6NDQ6NTgrMDA6MDBK7i0AAAAAKHRFWHRzdmc6YmFzZS11cmkAZmlsZTovLy90bXAvbWFnaWNrLTFQTzZqZUNxdVkLhAAAAABJRU5ErkJggg==');
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAAAAAAAA+UO7fwAAAAlwSFlzAAAASAAAAEgARslrPgAAAyRJREFUaN7tmb9rFEEUxz+JhvjjQDBGkUtOUERbPQ2KKMZKwVYi2tuIFoIoEvBsTFoxcgn+A2qjYBKtrKwkZyFaxMKYH0owUYz44y4BtZg93LzM3s3OzF4U7wtT7O68977f3Zk3b2ahjjr+bzR48rMC6AA6gSywE9gMpILnX4H3wChQAJ4Az4Cfy/0C2oFeYAr4FbNNAj1A23IQbwUGgJIFcdlKQB7YUCvyp4CPHojLNgucTJJ4E3A7AeKy9QexvGINMOyZ6DnUPNA9Gwpienvzvsl/Dnw3A93AvKbPoK8vkcSwuSti7AbGNP3yruRPJ0B+Fn3qTAOvNP27bMm34jfbzAVvvlLe3wiMC7sZoMVGwIAjYVtkgR/C1624TtpwX6Rc0C18lYBMHAe9juRdBawC3gh/PabGjUTn51oJADgr/E2hisaq2O+B/IQHAetQVWzYb4fubUt0OgaeBM54EDAHPBL3jpgIyIrr51UCNYiWAR57EADwtAo3LV6y+LMdAHIkN9YrYZ+I9cLESC5em4L7USKSREbEmjExkvm/OfTsUo0FrBaxijYCUuJ5DrcMNQkcMxSQshEgh9A2TR9XEaZpdjsWQ0g3iXVwFWGCg8JmySTWpdFRcb2rgoBrhkRsIWNLbloBBXF9tEKAHHA5QQHHxfWIiZHMvd+ovj/N4X8IpVCTNmyz10RAI2qShQ3PG9j5FnBB9B9HP2K06BHG71Albq0ErAWmRf/rpuRBv6G5UsXmi4WIcmq8w+J0fVX0KaL2zLGQF07mUaV2FO5bCii3aWArcAhYEM9uxiUP6qxyVjh6y5/aSGIH8MlRxDBquIbvfQDW2wgAdVYpg7wGtkT0bwfuoWp5101RuZ2wJV9Gv8bpBOowqhJ8kO9zJQ9qH6ob3wvADaLXCFfyg8BKHwIISA5FBBoDLrJ0nLqQf4jHw90ymliamcLtO/AAVVocdiDf5/PN69CFyt2+Jmk42zhPWFO0oI77ZK1i04qoPG+dKl2QRpUdsnYyaROo8iD2ChuGr9+sjcAe1LlNFrWopVn8m3UKtYaMoH6zFvgLfrPWUce/jt9yMQRTP6J79wAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOC0wNi0yNlQxMzo0NDo1OCswMDowMDuzlbwAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTgtMDYtMjZUMTM6NDQ6NTgrMDA6MDBK7i0AAAAAKHRFWHRzdmc6YmFzZS11cmkAZmlsZTovLy90bXAvbWFnaWNrLTFQTzZqZUNxdVkLhAAAAABJRU5ErkJggg==');
 }
 
 .headerLink--vols {
-   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAAAAAAAA+UO7fwAAAAlwSFlzAAAASAAAAEgARslrPgAAAaRJREFUaN7t2LFPFEEYxuEHMJKDqI0VFiRWJISEylBYWmjBv3Al7ZW2lEcJHe2VtLSUWliZkBAKKxPBwsYYUQoMFjsXyMrisjt7E5L5JV+ztzPf+87mzX57ZDKZ2DzEFk5xgmG4dm8Y4rJUw9Si7sLpDQa+dtVsqoM9LyfYy3QXm06SbCA12UBqsoHUZAOpyQausYC9W37fx2Jqw1WHsIEf/h3iynWGt5hJLXrMKj7UEF6uj3iRUvicYsa/aCB+XH+wi8eTFr+Ozy2El+sE/UkIH4c0lvBydRbyu4S0bUUP+apmIW1brUMeI6Rtq3HIm4T0CJtYvuWe5xjgXRDXWcjrbHoRhAzwrOb66zwNovZxXrNnawNnoWEfTxqsr2IuPPURvsc28C1svI7ZlgdQhxm8xDa+NDVwrAjwmmbDXusTDEwHDcOg6UbyH1upyQZSkw2kJqaBnmJ2qWKE+dSGq1jCof+PA8dYSS22TB8/a4gf1y/F90UUYrxcmrxlY/X2INZJBH7jPQ5cTZqvQr3Go8j9ovAJO3ijCHIVvXDPTliTyWQi8BcrIE5oG6CQOQAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOC0wNi0yNlQxMzo0NDoxNyswMDowMEmx668AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTgtMDYtMjZUMTM6NDQ6MTcrMDA6MDA47FMTAAAAKHRFWHRzdmc6YmFzZS11cmkAZmlsZTovLy90bXAvbWFnaWNrLUhjb3Q4emc2FXwmHgAAAABJRU5ErkJggg==');
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAAAAAAAA+UO7fwAAAAlwSFlzAAAASAAAAEgARslrPgAAAaRJREFUaN7t2LFPFEEYxuEHMJKDqI0VFiRWJISEylBYWmjBv3Al7ZW2lEcJHe2VtLSUWliZkBAKKxPBwsYYUQoMFjsXyMrisjt7E5L5JV+ztzPf+87mzX57ZDKZ2DzEFk5xgmG4dm8Y4rJUw9Si7sLpDQa+dtVsqoM9LyfYy3QXm06SbCA12UBqsoHUZAOpyQausYC9W37fx2Jqw1WHsIEf/h3iynWGt5hJLXrMKj7UEF6uj3iRUvicYsa/aCB+XH+wi8eTFr+Ozy2El+sE/UkIH4c0lvBydRbyu4S0bUUP+apmIW1brUMeI6Rtq3HIm4T0CJtYvuWe5xjgXRDXWcjrbHoRhAzwrOb66zwNovZxXrNnawNnoWEfTxqsr2IuPPURvsc28C1svI7ZlgdQhxm8xDa+NDVwrAjwmmbDXusTDEwHDcOg6UbyH1upyQZSkw2kJqaBnmJ2qWKE+dSGq1jCof+PA8dYSS22TB8/a4gf1y/F90UUYrxcmrxlY/X2INZJBH7jPQ5cTZqvQr3Go8j9ovAJO3ijCHIVvXDPTliTyWQi8BcrIE5oG6CQOQAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOC0wNi0yNlQxMzo0NDoxNyswMDowMEmx668AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTgtMDYtMjZUMTM6NDQ6MTcrMDA6MDA47FMTAAAAKHRFWHRzdmc6YmFzZS11cmkAZmlsZTovLy90bXAvbWFnaWNrLUhjb3Q4emc2FXwmHgAAAABJRU5ErkJggg==');
 }
 
 .headerLink--hotels {
-   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAAAAAAAA+UO7fwAAAAlwSFlzAAAASAAAAEgARslrPgAAANVJREFUaN7tlksKwjAURY+fDbgAxw7chmtxLa6lFNyIC3GiYGeO4qRCCJSQkvQl9B64o5ZwT/PaBoQQYo0cgCvwsC6Swg64AB3wBdyY6jkDN+DplfZTJf6IuEiqYWpEqheIjUiVAkegB4aZpf0MwB04LVn+laF4mPe4dnH6AuX/6ZYQyDE2U/mkltnMECj94iV12hYuU5x9hjXCJ+Yi14ncn0TzOyABayRgjQSs0Z/YGglYIwFrSpxGQ2KnU51Gm0YC1jQvkOMrlErWs1TzOyABIYRYNz+ShY8jKOFK3gAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOC0wNi0yNlQxMzo0MzoyNiswMDowMIOV/IEAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTgtMDYtMjZUMTM6NDM6MjYrMDA6MDDyyEQ9AAAAKHRFWHRzdmc6YmFzZS11cmkAZmlsZTovLy90bXAvbWFnaWNrLURiRXh4NnRQoMla0gAAAABJRU5ErkJggg==');
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAAAAAAAA+UO7fwAAAAlwSFlzAAAASAAAAEgARslrPgAAANVJREFUaN7tlksKwjAURY+fDbgAxw7chmtxLa6lFNyIC3GiYGeO4qRCCJSQkvQl9B64o5ZwT/PaBoQQYo0cgCvwsC6Swg64AB3wBdyY6jkDN+DplfZTJf6IuEiqYWpEqheIjUiVAkegB4aZpf0MwB04LVn+laF4mPe4dnH6AuX/6ZYQyDE2U/mkltnMECj94iV12hYuU5x9hjXCJ+Yi14ncn0TzOyABayRgjQSs0Z/YGglYIwFrSpxGQ2KnU51Gm0YC1jQvkOMrlErWs1TzOyABIYRYNz+ShY8jKOFK3gAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOC0wNi0yNlQxMzo0MzoyNiswMDowMIOV/IEAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTgtMDYtMjZUMTM6NDM6MjYrMDA6MDDyyEQ9AAAAKHRFWHRzdmc6YmFzZS11cmkAZmlsZTovLy90bXAvbWFnaWNrLURiRXh4NnRQoMla0gAAAABJRU5ErkJggg==');
 }
 
 .headerLink--residences {
-   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAAAAAAAA+UO7fwAAAAlwSFlzAAAASAAAAEgARslrPgAAAOJJREFUaN7tlksOwyAMRKdVj1ixaO5/iSZSumFRIUj52Bir8yQ2+cC8mCQGCCGahDhc8gSwAzgAbNZhesOfcbiSSMO7kiiFdyERMuH3wrHlXuzckz8AvOK5NxauxFX472uWlKgJv6xES/jlJHrCLyMxEt5cQiK8mYRk+OkSGuGnSWiGV5eYEV5NItfbnNDtY0Jmva7e6aqr1Ga4i/3VElsIFCVulRO23jMqUL3eXTmMOg/BuVq3l0gl3VeAAtZIvgMp6R5X+QS7rwAFrKGANRSwpuc/IPU9F5nHfQUoQAgh/80HFb/KWvcRYjwAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTgtMDYtMjZUMTM6NDI6MDIrMDA6MDDaPbTRAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE4LTA2LTI2VDEzOjQyOjAyKzAwOjAwq2AMbQAAACh0RVh0c3ZnOmJhc2UtdXJpAGZpbGU6Ly8vdG1wL21hZ2ljay11Q201U05YVa9yrkwAAAAASUVORK5CYII=');
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAAAAAAAA+UO7fwAAAAlwSFlzAAAASAAAAEgARslrPgAAAOJJREFUaN7tlksOwyAMRKdVj1ixaO5/iSZSumFRIUj52Bir8yQ2+cC8mCQGCCGahDhc8gSwAzgAbNZhesOfcbiSSMO7kiiFdyERMuH3wrHlXuzckz8AvOK5NxauxFX472uWlKgJv6xES/jlJHrCLyMxEt5cQiK8mYRk+OkSGuGnSWiGV5eYEV5NItfbnNDtY0Jmva7e6aqr1Ga4i/3VElsIFCVulRO23jMqUL3eXTmMOg/BuVq3l0gl3VeAAtZIvgMp6R5X+QS7rwAFrKGANRSwpuc/IPU9F5nHfQUoQAgh/80HFb/KWvcRYjwAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTgtMDYtMjZUMTM6NDI6MDIrMDA6MDDaPbTRAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE4LTA2LTI2VDEzOjQyOjAyKzAwOjAwq2AMbQAAACh0RVh0c3ZnOmJhc2UtdXJpAGZpbGU6Ly8vdG1wL21hZ2ljay11Q201U05YVa9yrkwAAAAASUVORK5CYII=');
 }
 
 .headerLink--campings {
-   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAAAAAAAA+UO7fwAAAAlwSFlzAAAASAAAAEgARslrPgAAAllJREFUaN7tmM+LTlEYxz8zgzcLDZqGjBhKiqQJycJiFixYsGDBggULihFLf8FsZmGKBflRZsGCYsFaqfEjEUkkJbGTiWH8vhbn3pz3+15v99733nPecr51FnPu83zP53nOac69LwQFBQW1q2rAEHAHOOsbJq/6gEdABHwBen0D5VHNgo+Ac76B8mrIgo+AHS14zYqHU92VAha34HU8Hk71SQqYWdCnG3gPfABmVwXbmSGmo6D3UWBuDH+kqgLSpEeov4DHHGDC8piI50pX2g6Myd9rC/gewxyhRN3xnBPVgIf87d75nPk9wEfqdzGK53pcFdFnFTEFzMuRO5wCn4xhVwUAzAAOAeNkf5XoBSabFDBJm9/qIwL8Lh723IhvyH9pPvBZYA/TeLNPYY5o22lUQN9iLsEa8EaenfANq1qAeWu1IQ9Yzw/Ks6/AQt/Qtk4J4GvMP4FE04FXEnPSN3SiRZiO2nD7UuL2S8x3YIlveIAzAvYS03FVF/BcYk/7hu8HvgnUnibxe2nchaU+C7ggQC+AaU3iu4BnkpP3VaU0LQN+CMyuDHm7JecnsNxHAWMC8pRs3xedwGPJvegafgWmc0W/nXdK7i9glcsCLgvAE7J1P1EH9b98RMAlV/ArMR2zF99WwGe7ePwGVrso4Kos/IDi3833xOtK1fADcafsRbe04LeVxl1YV2UB12XB+xTvfqJx8bxWFfwaGru/qQTfzeIZAeurKOCmLHK7RO9b4n2jbPgNKV0aLNF/MMV/Y5bEtPMblV19yapjznP5tKVCAUFBQUH/t/4AUkvyvgcCMIUAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTgtMDYtMjZUMTM6NDI6NDIrMDA6MDBed7orAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE4LTA2LTI2VDEzOjQyOjQyKzAwOjAwLyoClwAAACh0RVh0c3ZnOmJhc2UtdXJpAGZpbGU6Ly8vdG1wL21hZ2ljay1ETDFRYjUxNncUbD4AAAAASUVORK5CYII=');
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAAAAAAAA+UO7fwAAAAlwSFlzAAAASAAAAEgARslrPgAAAllJREFUaN7tmM+LTlEYxz8zgzcLDZqGjBhKiqQJycJiFixYsGDBggULihFLf8FsZmGKBflRZsGCYsFaqfEjEUkkJbGTiWH8vhbn3pz3+15v99733nPecr51FnPu83zP53nOac69LwQFBQW1q2rAEHAHOOsbJq/6gEdABHwBen0D5VHNgo+Ac76B8mrIgo+AHS14zYqHU92VAha34HU8Hk71SQqYWdCnG3gPfABmVwXbmSGmo6D3UWBuDH+kqgLSpEeov4DHHGDC8piI50pX2g6Myd9rC/gewxyhRN3xnBPVgIf87d75nPk9wEfqdzGK53pcFdFnFTEFzMuRO5wCn4xhVwUAzAAOAeNkf5XoBSabFDBJm9/qIwL8Lh723IhvyH9pPvBZYA/TeLNPYY5o22lUQN9iLsEa8EaenfANq1qAeWu1IQ9Yzw/Ks6/AQt/Qtk4J4GvMP4FE04FXEnPSN3SiRZiO2nD7UuL2S8x3YIlveIAzAvYS03FVF/BcYk/7hu8HvgnUnibxe2nchaU+C7ggQC+AaU3iu4BnkpP3VaU0LQN+CMyuDHm7JecnsNxHAWMC8pRs3xedwGPJvegafgWmc0W/nXdK7i9glcsCLgvAE7J1P1EH9b98RMAlV/ArMR2zF99WwGe7ePwGVrso4Kos/IDi3833xOtK1fADcafsRbe04LeVxl1YV2UB12XB+xTvfqJx8bxWFfwaGru/qQTfzeIZAeurKOCmLHK7RO9b4n2jbPgNKV0aLNF/MMV/Y5bEtPMblV19yapjznP5tKVCAUFBQUH/t/4AUkvyvgcCMIUAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTgtMDYtMjZUMTM6NDI6NDIrMDA6MDBed7orAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE4LTA2LTI2VDEzOjQyOjQyKzAwOjAwLyoClwAAACh0RVh0c3ZnOmJhc2UtdXJpAGZpbGU6Ly8vdG1wL21hZ2ljay1ETDFRYjUxNncUbD4AAAAASUVORK5CYII=');
 }
 
 .headerLink--ml {
-   background-image: none;
-   padding-left: 0.6rem;
+    background-image: none;
+    padding-left: 0.6rem;
 }
 
-
 .header__burgerMenu {
-  font-family: 'Black Ops One', cursive;
-  text-shadow: 0px 0px 0px rgb(255, 255, 255);
-   position: fixed;
-   z-index: 101;
-   top: 0;
-   left: -20rem;
-   width: 20rem;
-   height: 100%;
-   background-color: #FFFFFF;
-   box-shadow: 0 0 4px 0 #000000;
-   transition: all 0.25s ease-in-out;
+    font-family: 'Black Ops One', cursive;
+    text-shadow: 0px 0px 0px rgb(255, 255, 255);
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    left: -20rem;
+    width: 20rem;
+    height: 100%;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 4px 0 #000000;
+    transition: all 0.25s ease-in-out;
 }
 
 .header__burgerMenu__button {
-   position: absolute;
-   top: 0.325rem;
-   right: -3.75rem;
-   width: 2.5rem;
-   height: 2.5rem;
-   padding: 0;
-   background: none;
-   border: 0;
-   outline: 0;
-   line-height: 0;
-   cursor: pointer;
-   transition: right 0.2s linear 0.2s, transform 0.1s linear;
+    position: absolute;
+    top: 0.325rem;
+    right: -3.75rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0;
+    background: none;
+    border: 0;
+    outline: 0;
+    line-height: 0;
+    cursor: pointer;
+    transition: right 0.2s linear 0.2s, transform 0.1s linear;
 }
 
 .header__burgerMenu__button:hover .header__burgerMenu__button__bars:before {
-   top: -0.625rem;
+    top: -0.625rem;
 }
 
 .header__burgerMenu__button:hover .header__burgerMenu__button__bars:after {
-   bottom: -0.625rem;
+    bottom: -0.625rem;
 }
 
 .header__burgerMenu__button:active .header__burgerMenu__button__bars:before {
-   top: -0.375rem;
+    top: -0.375rem;
 }
 
 .header__burgerMenu__button:active .header__burgerMenu__button__bars:after {
-   bottom: -0.375rem;
+    bottom: -0.375rem;
 }
 
 .header__burgerMenu__button__bars {
-   position: relative;
-   display: inline-block;
-   width: 1.375rem;
-   height: 0.125rem;
-   background-color: #DA291C;
-   transition: all 0.2s ease-in-out 0.35s;
+    position: relative;
+    display: inline-block;
+    width: 1.375rem;
+    height: 0.125rem;
+    background-color: #DA291C;
+    transition: all 0.2s ease-in-out 0.35s;
 }
 
 .header__burgerMenu__button__bars:before,
 .header__burgerMenu__button__bars:after {
-   content: '';
-   display: inline-block;
-   position: absolute;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   background-color: #DA291C;
-   transition: top 0.1s linear, bottom 0.1s linear, transform 0.2s ease-in-out 0.4s;
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #DA291C;
+    transition: top 0.1s linear, bottom 0.1s linear, transform 0.2s ease-in-out 0.4s;
 }
 
 .header__burgerMenu__button__bars:before {
-   top: -0.5rem;
+    top: -0.5rem;
 }
 
 .header__burgerMenu__button__bars:after {
-   bottom: -0.5rem;
+    bottom: -0.5rem;
 }
 
 .header__burgerMenu__content {
-   border-top: 3rem solid #006747;
+    border-top: 3rem solid #006747;
 }
 
 .header__burgerMenu__content__list {
-   margin: 0;
-   padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .header__burgerMenu__content__list__item--accueil {
-   margin-bottom: 13px;
-   border-bottom-width: 1px;
+    margin-bottom: 13px;
+    border-bottom-width: 1px;
 }
 
 .header__burgerMenu__content__list__item--ml {
-   margin-top: 13px;
-   border-top-width: 1px;
+    margin-top: 13px;
+    border-top-width: 1px;
 }
 
 .header__burgerMenu__content__list__item--bottom {
-   position: absolute;
-   bottom: 0;
-   left: 0;
-   width: 100%;
-   border-top-width: 1px;
-   transition: all 0.2s ease-in-out;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top-width: 1px;
+    transition: all 0.2s ease-in-out;
 }
 
 .header__burgerMenu__content__list__item--bottom:hover {
-   background-color: #f2f4f7;
+    background-color: #f2f4f7;
 }
 
 .header__burgerMenu__content__list__item--bottom:hover .header__burgerMenu__content__list__item__link {
-   background-position-x: -2px;
+    background-position-x: -2px;
 }
 
 .header__burgerMenu__content__list__item__link {
-   position: relative;
-   display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 
 .header__burgerMenu__content__list__item__link:hover:after {
-   transform: translate(0);
-   list-style: none;
+    transform: translate(0);
+    list-style: none;
 }
 
 .header__burgerMenu__content__list__item__link:after {
-   content: '';
-   position: absolute;
-   bottom: 0;
-   left: 0;
-   display: inline-block;
-   width: 100%;
-   height: 2px;
-   background-color: #FFA500;
-   transform: translate(-150%);
-   transition: transform 0.1s ease-in-out;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: #FFA500;
+    transform: translate(-150%);
+    transition: transform 0.1s ease-in-out;
 }
 
 .header__layer {
-   display: none;
-   position: fixed;
-   z-index: 100;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   background-color: #000;
-   opacity: 0.5;
+    display: none;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
 }
 
 .header__logo {
-   font-family: 'Black Ops One', cursive;
-   font-size: 2rem;
-   color: #DA291C;
+    font-family: 'Black Ops One', cursive;
+    font-size: 2rem;
+    color: #DA291C;
 }
 
 .menuOpen .header__layer {
-   display: block;
+    display: block;
 }
 
 .menuOpen .header__burgerMenu {
-   left: 0;
+    left: 0;
 }
 
 .menuOpen .header__burgerMenu__button {
-   right: 0;
+    right: 0;
 }
 
 .menuOpen .header__burgerMenu__button:hover {
-   right: 0;
-   transform: scale(1.2);
+    right: 0;
+    transform: scale(1.2);
 }
 
 .menuOpen .header__burgerMenu__button:hover .header__burgerMenu__button__bars:before {
-   top: -8px;
+    top: -8px;
 }
 
 .menuOpen .header__burgerMenu__button:hover .header__burgerMenu__button__bars:after {
-   bottom: -8px;
+    bottom: -8px;
 }
 
 .menuOpen .header__burgerMenu__button:active .header__burgerMenu__button__bars:before {
-   top: -8px;
+    top: -8px;
 }
 
 .menuOpen .header__burgerMenu__button:active .header__burgerMenu__button__bars:after {
-   bottom: -8px;
+    bottom: -8px;
 }
 
 .menuOpen .header__burgerMenu__button__bars {
-   background-color: transparent;
-   transform: translateX(-8px);
+    background-color: transparent;
+    transform: translateX(-8px);
 }
 
 .menuOpen .header__burgerMenu__button__bars:before {
-   transform: rotate(45deg) translate(50%, 0);
+    transform: rotate(45deg) translate(50%, 0);
 }
 
 .menuOpen .header__burgerMenu__button__bars:after {
-   transform: rotate(-45deg) translate(50%, 0);
+    transform: rotate(-45deg) translate(50%, 0);
 }
 
 .horizontalNav {
-   box-shadow: 0 0 4px #000000;
-   background-color: #ffffff;
+    box-shadow: 0 0 4px #000000;
+    background-color: #ffffff;
 }
 
 @media (max-width: 767px) {
-   .horizontalNav {
-      display: none;
-   }
+    .horizontalNav {
+        display: none;
+    }
 }
 
 .horizontalNav__list {
-   display: flex;
-   align-items: center;
-   justify-content: space-around;
-   max-width: 560px;
-   height: 40px;
-   margin: 0 auto;
-   padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 560px;
+    height: 40px;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .horizontalNav__list__item {
-   display: block;
-   list-style: none;
+    display: block;
+    list-style: none;
 }
 
 .horizontalNav__list__item__link {
-   transition: background-position 0.1s ease-in-out;
-   background-position-y: 50px;
-   padding: 6px 8px 6px 28px;
-   background-position-x: 0;
-   margin: 0;
+    transition: background-position 0.1s ease-in-out;
+    background-position-y: 50px;
+    padding: 6px 8px 6px 28px;
+    background-position-x: 0;
+    margin: 0;
 }
 
 .horizontalNav__list__item__link:hover {
-   background-position-y: center;
+    background-position-y: center;
 }
