@@ -1,0 +1,60 @@
+/** https://dev.to/maimohamed/css-clean-code-5d3p **/
+/** sources: https://codepen.io/chen1223/pen/pqZWbg **/
+@import url('https://fonts.googleapis.com/css2family=Black+Ops+One&display=swap');
+* {
+  font-family: 'Black Ops One', cursive;
+}
+body {
+  margin: 0;
+}
+.parallax-wrapper {
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.background {
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex: 1 0 auto;
+  position: relative;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  transform: translateZ(-1px) scale(2);
+}
+.background--spring {
+  background-image: url('https://images.thequint.com/thequint%2F2020-03%2F8280d7fc-f239-4ef2-906d-1e8b27798c3f%2Fban.jpg?rect=0%2C0%2C2000%2C1125');
+}
+.background--summer {
+  background-image: url('https://images.indianexpress.com/2021/12/Bangladesh-50-1.jpg');
+}
+.background--fall {
+  background-image: url('https://images.pexels.com/photos/33060/road-forest-season-autumn.jpg?cs=srgb&dl=autumn-fall-forest-33060.jpg&fm=jpg');
+}
+.background--TheFutureOfBangladesh {
+  background-image: url('https://bif5m4023k53ib5vt30v2wu8-wpengine.netdna-ssl.com/wp-content/uploads/2020/06/aerial-photography-of-city-2382896-scaled.jpg');
+}
+.background--Creator {
+  background-image: url('https://scontent.cdninstagram.com/v/t1.15752-9/279580989_1454294395028513_6241592780549297758_n.jpg?stp=dst-jpg_p720x720&_nc_cat=104&ccb=1-5&_nc_sid=5a057b&_nc_ohc=QkOf8eZoB-oAX-9jXn7&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.cdninstagram.com&oh=03_AVKmO8iplr4zUsV_sViSKXBs6HNDedIULT8UE_6TxFZ2UA&oe=62970B93');
+}
+.title {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  height: 80px;
+  color: white;
+  font-size: 4rem;
+  background: rgba(0, 0, 0, 0.4);
+}
+.season-desc {
+  background-image: url('../photos/people.jpeg');
+  height: 100vh;
+  display: flex;
+}
