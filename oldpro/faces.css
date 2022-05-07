@@ -3,18 +3,17 @@
 /**This is just for looks**/
 body {
     overflow: hidden;
-    background-color: black;
+    background-color: #006747;
 }
 
 /**The div controls the designs, like the container style and some colors**/
 div {
-    position: absolute;
     font-family: Quicksand;
     font-size: 2.5vh;
-    width: 100%;
-    background-color: deepskyblue;
-    border-style: groove;
-    border-color: black;
+  font-weight: bold;
+  	color: #DA291C; 
+    text-shadow: 0px 2px 0px rgb(0, 0, 0);
+
 }
 
 /*This is for making sure the images are full size*/
@@ -31,7 +30,7 @@ img {
     height: 100vh;
 }
 
-/*This contains the Alexandria containers*/
+/*This contains the second photo containers*/
 .overlay {
     position: absolute;
     top: 0;
@@ -41,7 +40,7 @@ img {
     transition: 1s ease;
 }
 
-/*The hover effect allows the Alexandria pictures to appear when hovering over the Trump pictures*/
+/*This allows for the picture to change when hovering*/
 .container:hover .overlay {
     opacity: 1;
 }
@@ -49,40 +48,27 @@ img {
 /**This contains our information**/
 .overlay_text {
     position: absolute;
-    top: 0vw;
+    top: 2vw;
     opacity: 0;
+  
 }
 
-/*This allows the text of our information to appear when clicked and held*/
-.container:active .overlay_text {
+/*This allows the text to appear*/
+.overlay_text {
     opacity: 1;
     text-align: center;
 }
 
-/*This contains our pictures*/
-.uverlay {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: 1s ease;
-}
-
-/*This allows our pictures to appear when clicked and held*/
-.container:active .uverlay {
-    opacity: 1;
-}
 
 /*These just decide the position of our containers*/
 .al {
     left: 0vw;
 }
 
-.jerome {
+.dillon {
     left: 33vw;
 }
 
-.kenny {
+.rufayda {
     left: 66vw;
 }
