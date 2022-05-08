@@ -4,16 +4,18 @@
 
 /********************* // story // ********************/
 .story {
+    /* .story positioning */
     position: absolute;
     top: 0;
     left: 0;
-    /* font setting */
+    /* font being used and size */
     font-family: 'Black Ops One', cursive;
     font-size: 2rem;
 }
 
 /*** // header // ***/
 .title {
+    /* The title being adjusted and positioned */
     text-align: center;
     position: relative;
     top: 0vh;
@@ -22,12 +24,13 @@
 }
 
 h1 {
+    /* font settings and color */
     font-family: 'Black Ops One', cursive;
     font-size: 3rem;
     color: black;
     text-shadow: 0vw 0vh 5px aliceblue;
     padding: 45vh 0vw 47vh 0vw;
-    /* background settings and position */
+    /* background info and position */
     background-image: url("../photos/city3.jpg");
     background-attachment: fixed;
     background-position: center;
@@ -48,6 +51,7 @@ h1 {
 }
 
 .txt_one {
+    /* text color and settings */
     color: aliceblue;
     width: 45%;
     padding: 7vh 2vw 7vh 2vw;
@@ -66,11 +70,10 @@ h1 {
 }
 
 .txt_two {
+    /* text color and settings */
     color: aliceblue;
     padding: 7vh 2vw 7vh 2vw;
     width: 45%;
     position: relative;
     left: 50%;
 }
-
-/* // box three // ***/
