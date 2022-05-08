@@ -4,16 +4,18 @@
 
 /********************* // story // ********************/
 .story {
+    /* Changing the location of .story */
     position: absolute;
     top: 0;
     left: 0;
-    /* font setting */
+    /* font being used + the size */
     font-family: 'Black Ops One', cursive;
     font-size: 2rem;
 }
 
 /*** // header // ***/
 .title {
+    /* The title being adjusted and positioned */
     text-align: center;
     position: relative;
     top: 0vh;
@@ -22,12 +24,13 @@
 }
 
 h1 {
+    /* font settings and color */
     font-family: 'Black Ops One', cursive;
     font-size: 3rem;
     color: aliceblue;
     text-shadow: 1vw 1vh 5px black;
     padding: 45vh 0vw 47vh 0vw;
-    /* background settings and position */
+    /* background info and position */
     background-image: url("../photos/birds2.jpg");
     background-attachment: fixed;
     background-position: center;
@@ -48,6 +51,7 @@ h1 {
 }
 
 .txt_one {
+    /* text color and settings */
     color: aliceblue;
     width: 45%;
     padding: 7vh 2vw 7vh 2vw;
@@ -65,6 +69,7 @@ h1 {
 }
 
 .txt_two {
+    /* text number two's position and settings */
     padding: 7vh 2vw 7vh 2vw;
     width: 45%;
     position: relative;
@@ -84,6 +89,7 @@ h1 {
 }
 
 .txt_three {
+    /* text number three's position and settings */
     padding: 7vh 2vw 7vh 2vw;
     width: 45%;
     position: relative;
@@ -91,7 +97,7 @@ h1 {
 }
 
 /*** // box five // ***/
-.p_five {
+.p_four {
     /* background settings and position */
     background-color: #a2739d;
     background-image: url("../photos/Manekshaw.jpg");
@@ -104,7 +110,8 @@ h1 {
     padding-bottom: 1vh;
 }
 
-.txt_five {
+.txt_four {
+    /* text number five's position and settings */
     z-index: 4;
     padding: 7vh 2vw 7vh 2vw;
     width: 45%;
