@@ -3,14 +3,17 @@
 @import url('https://fonts.googleapis.com/css2family=Black+Ops+One&display=swap');
 
 * {
+    /* font used */
     font-family: 'Black Ops One', cursive;
 }
 
 body {
+    /* marginalize the body */
     margin: 0;
 }
 
 .parallax-wrapper {
+    /* sets the perspective and settings for parallax */
     perspective: 1px;
     transform-style: preserve-3d;
     height: 100vh;
@@ -19,6 +22,7 @@ body {
 }
 
 .background {
+    /* background settings and alighnments */
     background-position: center;
     background-size: cover;
     display: flex;
@@ -32,57 +36,68 @@ body {
     transform: translateZ(-1px) scale(2);
 }
 
-.background--spring {
+.background--BangladeshLiberationWar {
+    /* displays the image for the background */
     background-image: url('https://images.thequint.com/thequint%2F2020-03%2F8280d7fc-f239-4ef2-906d-1e8b27798c3f%2Fban.jpg?rect=0%2C0%2C2000%2C1125');
 }
 
-.background--summer {
+.background--TheBirdsOfFreedom {
+    /* displays the image for the background */
     background-image: url('../photos/birds3.jpg');
 }
 
-.background--fall {
+.background--Kabir {
+    /* displays the image for the background */
     background-image: url('https://images.pexels.com/photos/33060/road-forest-season-autumn.jpg?cs=srgb&dl=autumn-fall-forest-33060.jpg&fm=jpg');
 }
 
 .background--TheFutureOfBangladesh {
+    /* displays the image for the background */
     background-image: url('https://bif5m4023k53ib5vt30v2wu8-wpengine.netdna-ssl.com/wp-content/uploads/2020/06/aerial-photography-of-city-2382896-scaled.jpg');
 }
 
 .background--Creator {
+    /* displays the image for the background */
     background-image: url('../photos/creator.jpg');
 }
 
 .title {
+    /* the title's positioning */
     position: absolute;
     width: 100%;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 5px;
     height: 80px;
+    /* title's color setting and font */
     color: white;
     font-size: 4rem;
     background: rgba(0, 0, 0, 0.4);
 }
 
 .season-desc {
+    /* background image and display settings */
     background-image: url('../photos/people.jpeg');
     height: 100vh;
     display: flex;
 }
 
 .season-desc1 {
+    /* background image and display settings */
     background-image: url('../photos/raghu.jpg');
     height: 100vh;
     display: flex;
 }
 
 .season-desc2 {
+    /* background image and display settings */
     background-image: url('../photos/lib3.jpg');
     height: 100vh;
     display: flex;
 }
 
 .season-desc3 {
+    /* background image and display settings */
     background-image: url('../photos/lib.jpg');
     height: 100vh;
     display: flex;
