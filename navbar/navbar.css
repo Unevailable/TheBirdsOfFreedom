@@ -3,16 +3,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 
 a {
+    /* text color settings */
     text-decoration: none;
     color: white;
 }
 
 a:hover {
+    /* underlines the text */
     text-decoration: underline;
 }
 
-.header__burgerMenu__content__list__item__link,
-.horizontalNav__list__item__link {
+.header__burgerMenu__content__list__item__link {
+    /* font and text settings for header */
     display: block;
     margin-left: 1.25rem;
     padding: 1rem 0.6rem 1rem 4rem;
@@ -25,12 +27,13 @@ a:hover {
     background-size: 1.5rem 1.5rem;
 }
 
-.header__burgerMenu__content__list__item__link:hover,
-.horizontalNav__list__item__link:hover {
+.header__burgerMenu__content__list__item__link:hover {
+    /* gets rid of the black underline when hovering over text in the menu*/
     text-decoration: none;
 }
 
-.header__burgerMenu__content__list__item--accueil,
+/** code that can edit the border around home and meet the creator in the burger menu **/
+.header__burgerMenu__content__list__item--homepage,
 .header__burgerMenu__content__list__item--ml,
 .header__burgerMenu__content__list__item--bottom {
     padding-top: 0.8125rem;
@@ -40,6 +43,7 @@ a:hover {
     border-width: 1px;
 }
 
+/** This code lefts you change the postion/width/height of the banner at the top of every page **/
 header {
     position: fixed;
     z-index: 30;
@@ -50,6 +54,7 @@ header {
     width: 100%;
 }
 
+/** This lets you change the look of the banner at the top of every page**/
 .header {
     display: flex;
     justify-content: center;
@@ -60,36 +65,34 @@ header {
 }
 
 /** these are the icons on the hamburger menu**/
-.headerLink--accueil {
+.headerLink--homepage {
     /** home page icon **/
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAAAAAAAA+UO7fwAAAAlwSFlzAAAASAAAAEgARslrPgAAAQxJREFUaN7tlzEOAUEYRh8RjUSr1riAG+hcgUMoXUHrDlxB5wYuoFFvK9FswWpmEtlgd3b+9e/K/5LXyJJvMuQFGIZh/CsdYANsga72mFD6wB7InDv3WisYAIeX8d4jMNQeV8QIOL0Z7z25ZxrJGDh/Ge+9ABPtsXmmQFJivDdx72kEM+AaMN57A+ba45dAWmG8NwUWWuNXwD1ivPcBrH853AcqdnjenwQvHyhpaw3ep0BJW0vwigIlrWjwygZKWpHghQZK2qjgVQ2UtJWCFxsoaYOCJxUoad8GrxNwK1noNUZSalvr/urZAZpGr4bPLPruiv6WWn8DdgBt7ADa2AG0sQNoYwcwDMMwDE2eHFpoy4OoEaYAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTgtMDYtMjZUMTM6Mjc6MDcrMDA6MDCGmZpxAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE4LTA2LTI2VDEzOjI3OjA3KzAwOjAw98QizQAAACh0RVh0c3ZnOmJhc2UtdXJpAGZpbGU6Ly8vdG1wL21hZ2ljay10NW9XR0xHQ6crYYwAAAAASUVORK5CYII=');
 }
 
-.headerLink--sejours {
+.headerLink--homecon {
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAAAAAAAA+UO7fwAAAAlwSFlzAAAASAAAAEgARslrPgAAAyRJREFUaN7tmb9rFEEUxz+JhvjjQDBGkUtOUERbPQ2KKMZKwVYi2tuIFoIoEvBsTFoxcgn+A2qjYBKtrKwkZyFaxMKYH0owUYz44y4BtZg93LzM3s3OzF4U7wtT7O68977f3Zk3b2ahjjr+bzR48rMC6AA6gSywE9gMpILnX4H3wChQAJ4Az4Cfy/0C2oFeYAr4FbNNAj1A23IQbwUGgJIFcdlKQB7YUCvyp4CPHojLNgucTJJ4E3A7AeKy9QexvGINMOyZ6DnUPNA9Gwpienvzvsl/Dnw3A93AvKbPoK8vkcSwuSti7AbGNP3yruRPJ0B+Fn3qTAOvNP27bMm34jfbzAVvvlLe3wiMC7sZoMVGwIAjYVtkgR/C1624TtpwX6Rc0C18lYBMHAe9juRdBawC3gh/PabGjUTn51oJADgr/E2hisaq2O+B/IQHAetQVWzYb4fubUt0OgaeBM54EDAHPBL3jpgIyIrr51UCNYiWAR57EADwtAo3LV6y+LMdAHIkN9YrYZ+I9cLESC5em4L7USKSREbEmjExkvm/OfTsUo0FrBaxijYCUuJ5DrcMNQkcMxSQshEgh9A2TR9XEaZpdjsWQ0g3iXVwFWGCg8JmySTWpdFRcb2rgoBrhkRsIWNLbloBBXF9tEKAHHA5QQHHxfWIiZHMvd+ovj/N4X8IpVCTNmyz10RAI2qShQ3PG9j5FnBB9B9HP2K06BHG71Albq0ErAWmRf/rpuRBv6G5UsXmi4WIcmq8w+J0fVX0KaL2zLGQF07mUaV2FO5bCii3aWArcAhYEM9uxiUP6qxyVjh6y5/aSGIH8MlRxDBquIbvfQDW2wgAdVYpg7wGtkT0bwfuoWp5101RuZ2wJV9Gv8bpBOowqhJ8kO9zJQ9qH6ob3wvADaLXCFfyg8BKHwIISA5FBBoDLrJ0nLqQf4jHw90ymliamcLtO/AAVVocdiDf5/PN69CFyt2+Jmk42zhPWFO0oI77ZK1i04qoPG+dKl2QRpUdsnYyaROo8iD2ChuGr9+sjcAe1LlNFrWopVn8m3UKtYaMoH6zFvgLfrPWUce/jt9yMQRTP6J79wAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOC0wNi0yNlQxMzo0NDo1OCswMDowMDuzlbwAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTgtMDYtMjZUMTM6NDQ6NTgrMDA6MDBK7i0AAAAAKHRFWHRzdmc6YmFzZS11cmkAZmlsZTovLy90bXAvbWFnaWNrLTFQTzZqZUNxdVkLhAAAAABJRU5ErkJggg==');
 }
 
-.headerLink--vols {
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAAAAAAAA+UO7fwAAAAlwSFlzAAAASAAAAEgARslrPgAAAaRJREFUaN7t2LFPFEEYxuEHMJKDqI0VFiRWJISEylBYWmjBv3Al7ZW2lEcJHe2VtLSUWliZkBAKKxPBwsYYUQoMFjsXyMrisjt7E5L5JV+ztzPf+87mzX57ZDKZ2DzEFk5xgmG4dm8Y4rJUw9Si7sLpDQa+dtVsqoM9LyfYy3QXm06SbCA12UBqsoHUZAOpyQausYC9W37fx2Jqw1WHsIEf/h3iynWGt5hJLXrMKj7UEF6uj3iRUvicYsa/aCB+XH+wi8eTFr+Ozy2El+sE/UkIH4c0lvBydRbyu4S0bUUP+apmIW1brUMeI6Rtq3HIm4T0CJtYvuWe5xjgXRDXWcjrbHoRhAzwrOb66zwNovZxXrNnawNnoWEfTxqsr2IuPPURvsc28C1svI7ZlgdQhxm8xDa+NDVwrAjwmmbDXusTDEwHDcOg6UbyH1upyQZSkw2kJqaBnmJ2qWKE+dSGq1jCof+PA8dYSS22TB8/a4gf1y/F90UUYrxcmrxlY/X2INZJBH7jPQ5cTZqvQr3Go8j9ovAJO3ijCHIVvXDPTliTyWQi8BcrIE5oG6CQOQAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOC0wNi0yNlQxMzo0NDoxNyswMDowMEmx668AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTgtMDYtMjZUMTM6NDQ6MTcrMDA6MDA47FMTAAAAKHRFWHRzdmc6YmFzZS11cmkAZmlsZTovLy90bXAvbWFnaWNrLUhjb3Q4emc2FXwmHgAAAABJRU5ErkJggg==');
-}
-
-.headerLink--hotels {
+.headerLink--birdwatch {
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAAAAAAAA+UO7fwAAAAlwSFlzAAAASAAAAEgARslrPgAAANVJREFUaN7tlksKwjAURY+fDbgAxw7chmtxLa6lFNyIC3GiYGeO4qRCCJSQkvQl9B64o5ZwT/PaBoQQYo0cgCvwsC6Swg64AB3wBdyY6jkDN+DplfZTJf6IuEiqYWpEqheIjUiVAkegB4aZpf0MwB04LVn+laF4mPe4dnH6AuX/6ZYQyDE2U/mkltnMECj94iV12hYuU5x9hjXCJ+Yi14ncn0TzOyABayRgjQSs0Z/YGglYIwFrSpxGQ2KnU51Gm0YC1jQvkOMrlErWs1TzOyABIYRYNz+ShY8jKOFK3gAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOC0wNi0yNlQxMzo0MzoyNiswMDowMIOV/IEAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTgtMDYtMjZUMTM6NDM6MjYrMDA6MDDyyEQ9AAAAKHRFWHRzdmc6YmFzZS11cmkAZmlsZTovLy90bXAvbWFnaWNrLURiRXh4NnRQoMla0gAAAABJRU5ErkJggg==');
 }
 
-.headerLink--residences {
+.headerLink--kabir {
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAAAAAAAA+UO7fwAAAAlwSFlzAAAASAAAAEgARslrPgAAAOJJREFUaN7tlksOwyAMRKdVj1ixaO5/iSZSumFRIUj52Bir8yQ2+cC8mCQGCCGahDhc8gSwAzgAbNZhesOfcbiSSMO7kiiFdyERMuH3wrHlXuzckz8AvOK5NxauxFX472uWlKgJv6xES/jlJHrCLyMxEt5cQiK8mYRk+OkSGuGnSWiGV5eYEV5NItfbnNDtY0Jmva7e6aqr1Ga4i/3VElsIFCVulRO23jMqUL3eXTmMOg/BuVq3l0gl3VeAAtZIvgMp6R5X+QS7rwAFrKGANRSwpuc/IPU9F5nHfQUoQAgh/80HFb/KWvcRYjwAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTgtMDYtMjZUMTM6NDI6MDIrMDA6MDDaPbTRAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE4LTA2LTI2VDEzOjQyOjAyKzAwOjAwq2AMbQAAACh0RVh0c3ZnOmJhc2UtdXJpAGZpbGU6Ly8vdG1wL21hZ2ljay11Q201U05YVa9yrkwAAAAASUVORK5CYII=');
 }
 
-.headerLink--campings {
+.headerLink--future {
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAAAAAAAA+UO7fwAAAAlwSFlzAAAASAAAAEgARslrPgAAAllJREFUaN7tmM+LTlEYxz8zgzcLDZqGjBhKiqQJycJiFixYsGDBggULihFLf8FsZmGKBflRZsGCYsFaqfEjEUkkJbGTiWH8vhbn3pz3+15v99733nPecr51FnPu83zP53nOac69LwQFBQW1q2rAEHAHOOsbJq/6gEdABHwBen0D5VHNgo+Ac76B8mrIgo+AHS14zYqHU92VAha34HU8Hk71SQqYWdCnG3gPfABmVwXbmSGmo6D3UWBuDH+kqgLSpEeov4DHHGDC8piI50pX2g6Myd9rC/gewxyhRN3xnBPVgIf87d75nPk9wEfqdzGK53pcFdFnFTEFzMuRO5wCn4xhVwUAzAAOAeNkf5XoBSabFDBJm9/qIwL8Lh723IhvyH9pPvBZYA/TeLNPYY5o22lUQN9iLsEa8EaenfANq1qAeWu1IQ9Yzw/Ks6/AQt/Qtk4J4GvMP4FE04FXEnPSN3SiRZiO2nD7UuL2S8x3YIlveIAzAvYS03FVF/BcYk/7hu8HvgnUnibxe2nchaU+C7ggQC+AaU3iu4BnkpP3VaU0LQN+CMyuDHm7JecnsNxHAWMC8pRs3xedwGPJvegafgWmc0W/nXdK7i9glcsCLgvAE7J1P1EH9b98RMAlV/ArMR2zF99WwGe7ePwGVrso4Kos/IDi3833xOtK1fADcafsRbe04LeVxl1YV2UB12XB+xTvfqJx8bxWFfwaGru/qQTfzeIZAeurKOCmLHK7RO9b4n2jbPgNKV0aLNF/MMV/Y5bEtPMblV19yapjznP5tKVCAUFBQUH/t/4AUkvyvgcCMIUAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTgtMDYtMjZUMTM6NDI6NDIrMDA6MDBed7orAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE4LTA2LTI2VDEzOjQyOjQyKzAwOjAwLyoClwAAACh0RVh0c3ZnOmJhc2UtdXJpAGZpbGU6Ly8vdG1wL21hZ2ljay1ETDFRYjUxNncUbD4AAAAASUVORK5CYII=');
 }
 
+/** this changes the position of "Meet The Creator Of This Site" on the hamburger menu**/
 .headerLink--ml {
     background-image: none;
     padding-left: 0.6rem;
 }
 
+/** this creates the look of the background of the menu**/
 .header__burgerMenu {
     font-family: 'Black Ops One', cursive;
     text-shadow: 0px 0px 0px rgb(255, 255, 255);
@@ -104,6 +107,7 @@ header {
     transition: all 0.25s ease-in-out;
 }
 
+/** this changes the position of the hamburger symbol**/
 .header__burgerMenu__button {
     position: absolute;
     top: 0.325rem;
@@ -119,6 +123,7 @@ header {
     transition: right 0.2s linear 0.2s, transform 0.1s linear;
 }
 
+/** the code below helps make the animation that happens when hovering over the hamburger symbol **/
 .header__burgerMenu__button:hover .header__burgerMenu__button__bars:before {
     top: -0.625rem;
 }
@@ -135,6 +140,7 @@ header {
     bottom: -0.375rem;
 }
 
+/** this changes the position/look/color of the lines of the hamburger menu**/
 .header__burgerMenu__button__bars {
     position: relative;
     display: inline-block;
@@ -144,6 +150,7 @@ header {
     transition: all 0.2s ease-in-out 0.35s;
 }
 
+/** this changes the position/look/color of the lines of the hamburger menu**/
 .header__burgerMenu__button__bars:before,
 .header__burgerMenu__button__bars:after {
     content: '';
@@ -156,14 +163,17 @@ header {
     transition: top 0.1s linear, bottom 0.1s linear, transform 0.2s ease-in-out 0.4s;
 }
 
+/** this changes the position of the hamburger menu line when hovering it **/
 .header__burgerMenu__button__bars:before {
     top: -0.5rem;
 }
 
+/** this changes the position of the hamburger menu line when hovering it **/
 .header__burgerMenu__button__bars:after {
     bottom: -0.5rem;
 }
 
+/** this lets you change the look of the top banner that appears when opening the menu**/
 .header__burgerMenu__content {
     border-top: 3rem solid #006747;
 }
@@ -183,15 +193,17 @@ header {
     border-top-width: 1px;
 }
 
+/** changes the background size/position/width of "Meet The Creators Of This Site" when hover over it**/
 .header__burgerMenu__content__list__item--bottom {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 99.5%;
     border-top-width: 1px;
     transition: all 0.2s ease-in-out;
 }
 
+/** changes the background color of "Meet The Creators Of This Site" when hover over it**/
 .header__burgerMenu__content__list__item--bottom:hover {
     background-color: #f2f4f7;
 }
@@ -210,6 +222,7 @@ header {
     list-style: none;
 }
 
+/** this creats and allows you to edit the positon/look of the line that appears when hovering over a link in the menu**/
 .header__burgerMenu__content__list__item__link:after {
     content: '';
     position: absolute;
@@ -218,11 +231,12 @@ header {
     display: inline-block;
     width: 100%;
     height: 2px;
-    background-color: #FFA500;
+    background-color: #DA291C;
     transform: translate(-150%);
     transition: transform 0.1s ease-in-out;
 }
 
+/** This code below allows you to darken everything behind the menu when opening the menu**/
 .header__layer {
     display: none;
     position: fixed;
@@ -235,12 +249,14 @@ header {
     opacity: 0.5;
 }
 
+/** this allows you to edit the font/size/color of the text on the banner at the top of pages**/
 .header__logo {
     font-family: 'Black Ops One', cursive;
     font-size: 2rem;
     color: #DA291C;
 }
 
+/** the code below changes the look/animation of the hamburge lines when opening/closing the menu**/
 .menuOpen .header__layer {
     display: block;
 }
@@ -285,42 +301,4 @@ header {
 
 .menuOpen .header__burgerMenu__button__bars:after {
     transform: rotate(-45deg) translate(50%, 0);
-}
-
-.horizontalNav {
-    box-shadow: 0 0 4px #000000;
-    background-color: #ffffff;
-}
-
-@media (max-width: 767px) {
-    .horizontalNav {
-        display: none;
-    }
-}
-
-.horizontalNav__list {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    max-width: 560px;
-    height: 40px;
-    margin: 0 auto;
-    padding: 0;
-}
-
-.horizontalNav__list__item {
-    display: block;
-    list-style: none;
-}
-
-.horizontalNav__list__item__link {
-    transition: background-position 0.1s ease-in-out;
-    background-position-y: 50px;
-    padding: 6px 8px 6px 28px;
-    background-position-x: 0;
-    margin: 0;
-}
-
-.horizontalNav__list__item__link:hover {
-    background-position-y: center;
 }
