@@ -14,48 +14,57 @@
     <div class="parallax-wrapper">
         <div class="container">
             <h1>The Birds Of Freedom</h1>
+            <!-- below is the html code to our navbar/menu and this code works with the help of our code from navbar.css and navbar.js-->
             <header>
                 <div class="header">
                     <div class="header__burgerMenu">
                         <button class="header__burgerMenu__button">
                             <span class="header__burgerMenu__button__bars"></span>
+                            <!-- This allows you to open/close the menu -->
                         </button>
                         <nav class="header__burgerMenu__content">
                             <ul class="header__burgerMenu__content__list">
                                 <li class="header__burgerMenu__content__list__item
-                               header__burgerMenu__content__list__item--accueil">
+                               header__burgerMenu__content__list__item--homepage">
                                     <a class="header__burgerMenu__content__list__item__link
-                                  headerLink--accueil" href="index.html">Home Page</a>
+                                  headerLink--homepage" href="index.html">Home Page</a>
+                                    <!-- This links you to our index.html which is the home page of the website-->
                                 </li>
                                 <li class="header__burgerMenu__content__list__item">
                                     <a class="header__burgerMenu__content__list__item__link
-                                  headerLink--sejours" href="BDIW/page1.html">Bangladesh's Liberation War</a>
+                                  headerLink--homecon" href="BDIW/page1.html">Bangladesh's Liberation War</a>
+                                    <!-- This links you to our page1.html which talks gives a summary of the Bangladesh Liberation War -->
                                 </li>
                                 <li class="header__burgerMenu__content__list__item">
                                     <a class="header__burgerMenu__content__list__item__link
-                                  headerLink--hotels" href="BDIW/birds.html">The Birds Of Freedom</a>
+                                  headerLink--birdwatch" href="BDIW/birds.html">The Birds Of Freedom</a>
+                                    <!-- This links you to our birds.html which talks about a few people who help aid in the war and was recoginzed for their contributions in the war -->
                                 </li>
                                 <li class="header__burgerMenu__content__list__item">
                                     <a class="header__burgerMenu__content__list__item__link
-                                  headerLink--residences" href="BDIW/kabir.html">Kabir Hussain</a>
+                                  headerLink--kabir" href="BDIW/kabir.html">Kabir Hussain</a>
+                                    <!-- This links you to our kabir.html, This page talks about Al's father and his involvement in the war -->
                                 </li>
                                 <li class="header__burgerMenu__content__list__item">
                                     <a class="header__burgerMenu__content__list__item__link
-                                  headerLink--campings" href="BDIW/future.html">The Future Of Bangladesh</a>
+                                  headerLink--future" href="BDIW/future.html">The Future Of Bangladesh</a>
+                                    <!-- This links you to our future.html also known as the page talking about the current state of Bangladesh -->
                                 </li>
                                 <li class="header__burgerMenu__content__list__item
                                header__burgerMenu__content__list__item--bottom">
                                     <a class="header__burgerMenu__content__list__item__link
                                   headerLink--ml" href="oldpro/faces.html">Meet The Creators Of This site</a>
+                                    <!-- This links you to our faces.html also knows as our about us page -->
                                 </li>
                             </ul>
                         </nav>
                     </div>
                     <div class="header__layer"></div>
-                    <!--- This is the heading of each page -->
+                    <!--- This is the heading/banner of each page -->
                     <div class="header__logo">Bangladesh Independece War Of 1971</div>
                 </div>
-                <!--Bird code-->
+                <!-- this marks the end of the html code for the Navbar-->
+                <!-- This is the HTML Bird code that calls to certain parts of the code in style.css-->
                 <div class="bird-container bird-container--one">
                     <div class="bird bird--one"></div>
                 </div>
@@ -69,32 +78,35 @@
                     <div class="bird bird--four"></div>
                 </div>
         </div>
-        <!--This is connected to our parra.css to create our parallax scolling on the home page -->
-        <div class="background background--spring">
+        <!-- This is the end of the Bird code-->
+        <!-- The code below is connected to our parra.css to create our parallax scolling on the home page it also links to other pages-->
+        <div class="background background--BangladeshLiberationWar">
             <h2 class="title"><a href="BDIW/page1.html">Bangladesh's Liberation War</a></h2>
-        </div> <!-- This links you to our page1.html -->
+        </div> <!-- This links you to our page1.html which talks gives a summary of the Bangladesh Liberation War -->
         <section class="season-desc">
         </section>
-        <div class="background background--summer">
+        <div class="background background--TheBirdsOfFreedom">
             <h2 class="title"><a href="BDIW/birds.html">The Birds Of Freedom</a></h2>
-        </div> <!-- This links you to our birds.html -->
+        </div> <!-- This links you to our birds.html which talks about few people who help aid in the war and was recoginzed for their contributions in the war -->
         <section class="season-desc1">
         </section>
-        <div class="background background--fall">
+        <div class="background background--Kabir">
             <h2 class="title"><a href="BDIW/kabir.html">Kabir Hussain</a></h2>
-        </div> <!-- This links you to our kabir.html -->
+        </div> <!-- This links you to our kabir.html, This page talks about Al's father and his involvement in the war -->
         <section class="season-desc2">
         </section>
         <div class="background background--TheFutureOfBangladesh">
             <h2 class="title"><a href="BDIW/future.html">The Future Of Bangladesh</a></h2>
-        </div> <!-- This links you to our future.html -->
+        </div> <!-- This links you to our future.html also known as the page talking about the current state of Bangladesh -->
         <section class="season-desc3">
         </section>
         <div class="background background--Creator">
             <h2 class="title"><a href="oldpro/faces.html">Meet The Creators</a></h2>
-        </div> <!-- This links you to our faces.html -->
+        </div> <!-- This links you to our faces.html also knows as our about us page -->
     </div>
+    <!-- This is the end of our html parallax scrolling and linking code -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+    <!-- This libray allows you to open the navbar/menu-->
     <script src="navbar/navbar.js"></script>
 </body>
 
