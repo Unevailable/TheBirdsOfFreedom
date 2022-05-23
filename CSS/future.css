@@ -1,7 +1,11 @@
 /** I want to credit David one of the Winners from 2019 for the source of this code**/
 /* imports */
-@import url('https://fonts.googleapis.com/css2family=Black+Ops+One&display=swap');
-
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+</style>
+body {
+  background-color: #006747
+}
 /********************* // story // ********************/
 .story {
     /* .story positioning */
@@ -77,3 +81,65 @@ h1 {
     position: relative;
     left: 50%;
 }
+
+/* the code below allows the site to work on mobile*/
+@media only screen and (hover: none) and (pointer: coarse)
+{
+
+  .story {
+    /* Changing the location of .story */
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* font being used + the size */
+    font-family: 'Black Ops One', cursive;
+    font-size: 0.7rem;
+    background-color: #006747
+}
+  
+  .title {
+    /* The title being adjusted and positioned */
+    text-align: center;
+    position: relative;
+    top: 10vh;
+    width: 100%;
+    margin-top: -10vh;
+}
+
+  h1 {
+    /* font settings and color */
+    font-family: 'Black Ops One', cursive;
+    color: aliceblue;
+    text-shadow: 1vw 1vh 5px black;
+    padding: 45vh 0vw 47vh 0vw;
+    /* background info and position */
+    background-image: url("../photos/city3.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150%;
+}
+
+  .p_one {
+    /* background settings and position */
+    background-image: url("../photos/cityjawn.jpg");
+    background-color: #746007;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 25vh;
+    background-size: 50%;
+    margin-top: -7vh;
+  }
+
+  .p_two {
+    /* background settings and position */
+    background-image: url("../photos/Dhaka.jpg");
+    background-color: #a94c4c;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 5vh;
+    background-size: 40%;
+    margin-top: -5vh
+}
+}
+  
