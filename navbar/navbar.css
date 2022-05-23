@@ -302,3 +302,26 @@ header {
 .menuOpen .header__burgerMenu__button__bars:after {
     transform: rotate(-45deg) translate(50%, 0);
 }
+
+/* the code below allows the site to work on mobile*/
+@media only screen and (hover: none) and (pointer: coarse)
+{
+  
+/** this changes the position/look/color of the lines of the hamburger menu**/
+.header__burgerMenu__button__bars {
+    position: relative; left: -25px;
+    display: inline-block;
+    width: 1.5rem;
+    height: 0.125rem;
+    background-color: #DA291C;
+    transition: all 0.2s ease-in-out 0.35s;
+}
+  
+ /** this allows you to edit the font/size/color of the text on the banner at the top of pages**/
+.header__logo {
+    font-family: 'Black Ops One', cursive;
+    font-size: 1rem;
+    color: #DA291C;
+}
+  
+}
