@@ -1,7 +1,11 @@
 /** I want to credit David one of the Winners from 2019 for the source of this code**/
 /* imports */
-@import url('https://fonts.googleapis.com/css2family=Black+Ops+One&display=swap');
-
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+</style>
+body {
+  background-color: #006747
+}
 /********************* // story // ********************/
 .story {
     /* .story positioning */
@@ -61,6 +65,7 @@ h1 {
 .p_two {
     /* background settings and position */
     background-image: url("../photos/army2.jpg");
+    background-color: white;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 10vh;
@@ -127,3 +132,88 @@ h1 {
     padding: 7vh 2vw 7vh 2vw;
     width: 45%;
 }
+
+/* the code below allows the site to work on mobile*/
+@media only screen and (hover: none) and (pointer: coarse)
+{
+
+  .story {
+    /* Changing the location of .story */
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* font being used + the size */
+    font-family: 'Black Ops One', cursive;
+    font-size: 0.7rem;
+    background-color: #006747
+}
+  
+  .title {
+    /* The title being adjusted and positioned */
+    text-align: center;
+    position: relative;
+    top: 10vh;
+    width: 100%;
+    margin-top: -10vh;
+}
+
+  h1 {
+    /* font settings and color */
+    font-family: 'Black Ops One', cursive;
+    color: aliceblue;
+    text-shadow: 1vw 1vh 5px black;
+    padding: 45vh 0vw 47vh 0vw;
+    /* background info and position */
+    background-image: url("../photos/kids.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150%;
+}
+
+ .p_one {
+    /* background settings and position */
+    background-image: url("../photos/Kabir.jpg");
+    background-color: #8992CE;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 25vh;
+    background-size: 50%;
+    margin-top: -7vh;
+}
+
+  .p_two {
+    /* background settings and position */
+    background-image: url("../photos/army2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 5vh;
+    background-size: 40%;
+    margin-top: -7vh
+}
+
+  .p_three {
+    /* background settings and position */
+    background-color: #313A76;
+    background-image: url("../photos/army1.jpg");
+    background-position: 25vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 50%;
+    margin-top: -8vh
+}
+
+  .p_five {
+    /* background settings and position */
+    background-color: white;
+    background-image: url("../photos/army.jpg");
+    background-repeat: no-repeat;
+    background-position: 25vh;
+    background-attachment: fixed;
+    background-size: 50%;
+    z-index: 3;
+  
+    padding-bottom: 1vh;
+}
+}
+  
